@@ -2,11 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Getting Started</title>
+    <title>JASM PLAYGROUND</title>
     <style>
-      body {
+      body, html {
         margin: 0;
+        padding: 0;
         overflow: none;
+      }
+
+      *::-webkit-scrollbar {
+        display: none;
       }
 
       textarea {
@@ -21,7 +26,8 @@
     </style>
   </head>
   <body>
-    <textarea></textarea>
+    <textarea id="code"></textarea>
+    <textarea readonly id="log"></textarea>
     <script src="main.js"></script>
   </body>
 </html>
